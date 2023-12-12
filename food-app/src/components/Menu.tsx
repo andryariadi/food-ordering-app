@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Cart from "./Cart";
 
 const links = [
   { id: 1, title: "Homepage", url: "/" },
@@ -12,6 +13,8 @@ const links = [
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(true);
+
+  const user = false;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -29,6 +32,8 @@ export default function Menu() {
               {link.title}
             </Link>
           ))}
+          {!user ? <Link href="/login">Login</Link> : <Link href="/orders">Order</Link>}
+          <Cart />
         </div>
       )}
     </>
