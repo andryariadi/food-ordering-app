@@ -28,7 +28,7 @@ export default function Navbar() {
           <Menu />
         </div>
         <div className="hidden md:flex gap-4 items-center">
-          <div className="flex items-center gap-2 bg-orange-300 p-1 rounded-md cursor-pointer hover:text-xl transition-all duration-300">
+          <div className="flex items-center gap-2 bg-amber-500 p-1 rounded-md cursor-pointer hover:text-xl transition-all duration-300">
             <Image src="/phone.png" width={20} height={20} alt="phone" />
             <p>+62 123 456</p>
           </div>
