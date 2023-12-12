@@ -26,13 +26,21 @@ export default function Menu() {
         <Image src={isOpen ? "/open.png" : "/close.png"} alt="menu" width={20} height={20} onClick={toggleMenu} />
       </div>
       {!isOpen && (
-        <div className="bg-red-500 text-white absolute left-0 top-24 w-screen h-[calc(100vh-6rem)] flex justify-center items-center flex-col gap-8 text-2xl font-semibold" onClick={toggleMenu}>
+        <div className="bg-rose-600 text-white absolute left-0 top-32 w-screen h-[calc(100vh-8rem)] flex justify-center items-center flex-col gap-8 text-2xl font-semibold" onClick={toggleMenu}>
           {links.map((link) => (
             <Link key={link.id} href={link.url} className="hover:text-3xl transition-all duration-500">
               {link.title}
             </Link>
           ))}
-          {!user ? <Link href="/login">Login</Link> : <Link href="/orders">Order</Link>}
+          {!user ? (
+            <Link href="/login" className="hover:text-3xl transition-all duration-500">
+              Login
+            </Link>
+          ) : (
+            <Link href="/orders" className="hover:text-3xl transition-all duration-500">
+              Order
+            </Link>
+          )}
           <Cart />
         </div>
       )}
