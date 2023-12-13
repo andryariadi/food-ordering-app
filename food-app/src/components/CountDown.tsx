@@ -1,6 +1,11 @@
 "use client";
 import Countdown from "react-countdown";
 
+// const currentDate = new Date();
+
+// const endingDate = new Date(currentDate);
+// endingDate.setHours(13, 55, 0, 0);
+
 const endingDate = new Date("2023-12-14");
 
 export default function CountDown() {
