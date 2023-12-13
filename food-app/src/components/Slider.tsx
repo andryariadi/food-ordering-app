@@ -11,7 +11,7 @@ const data = [
   {
     id: 2,
     title: "we deliver your order wherever you are in NY",
-    image: "/slide2.png",
+    image: "/slide2.jpg",
   },
   {
     id: 3,
@@ -23,12 +23,12 @@ const data = [
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
-  //     }, 2000);
-  //     return () => clearInterval(interval);
-  //   }, [currentSlide]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [currentSlide]);
 
   return (
     <>
