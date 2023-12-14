@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function CartPage() {
   return (
     <>
-      <main className="flex flex-col lg:flex-row h-screen justify-center items-center text-rose-600">
-        <div className="container-cart flex-1 h-full w-full p-4 flex flex-col md:flex-row justify-center flex-wrap overflow-y-scroll lg:p-20 xl:p-30">
+      <main className="flex flex-col lg:flex-row h-screen justify-center items-center text-rose-600 mt-5">
+        <div className="container-cart flex-1 h-full w-full p-4 flex flex-col md:flex-row justify-center md:flex-wrap overflow-y-scroll lg:p-20 xl:p-30">
           <div className="w-full flex items-center justify-between mb-2">
-            <Image src="/temporary/p1.png" alt="pizza" width={100} height={100} />
+            <Image src="/temporary/p1.png" alt="pizza" width={100} height={100} className="object-contain" />
             <div>
               <h1 className="text-2xl font-bold uppercase">Silician</h1>
               <span>Large</span>
@@ -15,7 +15,7 @@ export default function CartPage() {
             <span className="cursor-pointer">X</span>
           </div>
           <div className="w-full flex items-center justify-between mb-2">
-            <Image src="/temporary/p1.png" alt="pizza" width={100} height={100} />
+            <Image src="/temporary/p1.png" alt="pizza" width={100} height={100} className="object-contain" />
             <div>
               <h1 className="text-2xl font-bold uppercase">Silician</h1>
               <span>Large</span>
@@ -24,7 +24,7 @@ export default function CartPage() {
             <span className="cursor-pointer">X</span>
           </div>
           <div className="w-full flex items-center justify-between mb-2">
-            <Image src="/temporary/p1.png" alt="pizza" width={100} height={100} />
+            <Image src="/temporary/p1.png" alt="pizza" width={100} height={100} className="object-contain" />
             <div>
               <h1 className="text-2xl font-bold uppercase">Silician</h1>
               <span>Large</span>
