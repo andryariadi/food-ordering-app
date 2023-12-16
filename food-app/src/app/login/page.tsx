@@ -10,7 +10,7 @@ export default function LoginPage() {
             <Image src="/login.jpg" alt="login" fill className="object-cover" />
           </div>
           <div className="flex flex-col gap-8 p-10 md:w-1/2 justify-center">
-            <h1 className="text-xl font-bold">Welcome</h1>
+            <h1 className="text-xl xl:text-3xl font-bold">Welcome</h1>
             <p>Log into your account or create a new one using social buttons</p>
             <button className="flex gap-4 p-4 ring-1 ring-rose-600 rounded-md">
               <Image src={"/google.png"} alt="google" width={20} height={20} className="object-contain" />
