@@ -6,7 +6,7 @@ export default function DetailProduct() {
   return (
     <section className="h-screen flex flex-col md:flex-row gap-5 p-4 lg:px-20 xl:px-40 items-center mb-5">
       {singleProduct.img && (
-        <div className="relative w-full h-fit ">
+        <div className="relative w-full h-fit">
           <Image src={singleProduct.img} alt="pizza" width={500} height={500} className="object-contain" />
         </div>
       )}
