@@ -1,9 +1,10 @@
+import React from "react";
 import Link from "next/link";
 import Menu from "./Menu";
 import Image from "next/image";
 import Cart from "./Cart";
 
-export default function Navbar() {
+const Navbar = () => {
   const user = false;
   return (
     <>
@@ -38,4 +39,6 @@ export default function Navbar() {
       </nav>
     </>
   );
-}
+};
+
+export default Navbar;
